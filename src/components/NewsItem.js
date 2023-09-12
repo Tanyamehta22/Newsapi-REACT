@@ -9,10 +9,10 @@ export class NewsItem extends Component {
     return (
       <div className='my-3'>
          <div className="card" style={{width: "18rem"}}>
-  <img src= {imageUrl}className="card-img-top" alt="..."/>
+  <img src= {!imageUrl?"https://fdn.gsmarena.com/imgroot/news/21/08/xiomi-smart-home-india-annoucements/-476x249w4/gsarena_00.jgp" : imageUrl}className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">{title}...</h5>
-    <p className="card-text">{descripton}...</p>z
+    <p className="card-text">{descripton}...</p>
     <a href={newsUrl} target="_blank" className="btn btn-sm btn-primary">Read More</a>
   </div>
 </div>
